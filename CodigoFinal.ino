@@ -14,12 +14,6 @@
 //Pino CS do modulo cartao SD
 int CS_PIN = 4;
 
-
-//Define e declara pinos do sensor de umidade
-#define DHTTYPE DHT11 // DHT 11
-#define DHTPIN A1
-DHT dht(DHTPIN, DHTTYPE);
-
 // Define os pinos do disply LCD
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
@@ -87,8 +81,9 @@ void loop(void)
     //Grava dados no cartao a cada 1 minuto
     if (second(t) == 0)
     {
-      Serial.println("Gravando dados no cartao SD...");
+      Serial.println("Gravando dados no cartao SD");
       grava_SD(t);
+      LCDshow();
     }
     Serial << endl;
   }
@@ -208,8 +203,16 @@ void fecha_arquivo()
 }
 
 // Funcao para mostrar na tela valor dos sensores
-void LCDshow(T,P,U)
+void LCDshow()
 {
+ 
+  float T = bme.readTemperature(); // Funcao implementada nas bibliotecas do BME280
+   
+  float P = bme.readPressure / 100.0F(); // Funcao implementada nas bibliotecas do BME280
+     
+  float U = bme.readHumidity(); // Funcao implementada nas bibliotecas do BME280
+      
+ 
   //Limpa a tela
   lcd.clear();
   //Posiciona o cursor na coluna 3, linha 0;
