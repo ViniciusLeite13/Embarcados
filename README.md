@@ -23,7 +23,7 @@ O fluxograma a seguir descreve o qualitativamente os componentes e funcionamento
 
 ### RTC DS3231
 
-Esse componente possui a função de fornecer a data e hora para armazenar os dados obtidos no log, possuindo a função de facilitar a análise dos dados, auxiliando a detectar padrões que possam ser maléficos para a colheita em determinados horários. A escolha por esse componente se deve ao fato de conseguir detectar falta de energia e acionar uma bateria caso seja necessário, possui ajuste automático de meses que possuem menos de 31 dias e correção de ano bissexto. Além disso, possui um sensor próprio de temperatura e um cristal oscilador para garantir maior precisão.
+Esse componente possui a função de fornecer a data e hora para armazenar os dados obtidos no log, possuindo a função de facilitar a análise dos dados, auxiliando a detectar padrões que possam ser maléficos para a colheita em determinados horários. A escolha por esse componente se deve ao fato de conseguir detectar falta de energia e acionar uma bateria caso seja necessário, além de possuir ajuste automático de meses que possuem menos de 31 dias e correção de ano bissexto. Conta também com um sensor próprio de temperatura e um cristal oscilador, que garante maior precisão.
 
 ### Oak-RH
 
