@@ -6,8 +6,8 @@ void grava_SD()
     // Recebendo o valor da temperatura utilizando o i2c
       float T = ;
       
-    // Recebendo o valor da pressao utilizando o i2c
-      float P = ;
+    // Recebendo o valor da umidade utilizando o i2c
+      float U = ;
       
       
   log = fopen("log.txt", "a");
@@ -44,8 +44,8 @@ void grava_SD()
   
   fputs("/");
   
-  fputs(" Pressao: ");
-  fscanf(log, %f, P);
+  fputs(" Umidade: ");
+  fscanf(log, %f, U);
   
   fputs("/");
   
@@ -58,8 +58,8 @@ void LCDshow()
  // Recebendo o valor da temperatura via i2c
   float T = ;
   
- // Recebendo o valor da pressao via i2c
-  float P =
+ // Recebendo o valor da umidade via i2c
+  float U =
  
   //Limpa a tela
   lcd.clear();
@@ -74,7 +74,7 @@ void LCDshow()
     delay(300);
   }
   lcd.setCursor(3, 1);
-  lcd.print(P);
+  lcd.print(U);
   delay(10000);
   //Rolagem para a esquerda
   for (int posicao = 0; posicao < 3; posicao++)
