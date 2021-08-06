@@ -56,12 +56,15 @@ Em seguida, exporta-se as variáveis para cross-compiling e executa-se o script:
     
 Para compilar o código na placa, faz-se o cross-compiling, envia-se ao IP do target e o executa:
 
-    ${CC} -Wall trabalho.c -o trabalhoARM
+    ${CC} -Wall main.c -o codigoARM
     
-    scp trabalhoARM root@172.17.2.121:/home/root
+    scp codigoARM root@172.17.2.121:/home/root
     
-    ./trabalhoARM
+    ./codigoARM
 
 
+### Comunicação
+
+O protocolo de comunicação escolhido foi o I2C
 
 
