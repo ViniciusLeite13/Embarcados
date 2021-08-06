@@ -1,7 +1,7 @@
 #include "funcoes.h"
 
 // Funcao para gravar o log no cartão SD
-void grava_SD()
+void gravar(time_t t)
 {
     // Recebendo o valor da temperatura utilizando o i2c
       float T = ;
