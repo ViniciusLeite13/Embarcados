@@ -12,9 +12,9 @@ Trabalho realizado por:
 
 ## Introdução
 
-Nosso grupo optou pelo projeto de uma estação meteorológica. Inicialmente, o grupo pensou em definir uma utilização para a estação a ser montada, a partir da qual poderíamos definir objetivos e funções a serem realizadas. A utilização definida foi para uso na agricultura, sendo possível monitorar plantações, obtendo dados de temperatura e umidade relativa do ar, que podem vir a ser utilizados para tomadas de decisões. Obs: o grupo não chegou a montar algoritmos responsáveis por unir os dados quantitativamente e elaborar tomadas de decisões, limitando-se à obtenção dos dados em si.
+Nosso grupo optou pelo projeto de uma estação meteorológica. Inicialmente, o grupo pensou em definir uma utilização para a estação a ser montada, a partir da qual poderíamos definir objetivos e funções a serem realizadas. A utilização definida foi para uso na agricultura, sendo possível monitorar plantações, obtendo dados de temperatura e umidade relativa do ar, que podem vir a ser utilizados para tomadas de decisões. A elaboração de algoritmos responsáveis por unir os dados quantitativamente e elaborar tomadas de decisões está fora do escopo do projeto, que limita-se à obtenção dos dados em si.
 
-O fluxograma a seguir mostra uma ideia de como seria o funcioanmento do sistema:
+O fluxograma a seguir descreve como seria o funcioanmento do sistema:
 
 ![WhatsApp Image 2021-08-05 at 21 14 44](https://user-images.githubusercontent.com/82786123/128452197-1c6f21d0-bb1a-4ab9-800a-294f3cd74c8a.jpeg)
 
