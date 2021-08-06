@@ -12,7 +12,7 @@ Trabalho realizado por:
 
 ## Introdução
 
-Nosso grupo optou pelo projeto de uma Estação Meteorológica, capaz de medir a tempratura e umidade relativa do ambiente em está inserida. Foi definida uma utilização específica para a estação a ser montada, a partir da qual poderíamos definir claros objetivos e funções a serem realizadas, focalizando a difinição dos parâmetros do projeto. A utilização definida foi para uso na agricultura, sendo possível monitorar plantações, obtendo dados de temperatura e umidade relativa do ar, que podem vir a ser utilizados para tomadas de decisões pelo agricultor. A elaboração de algoritmos responsáveis por unir os dados quantitativamente e elaborar tomadas de decisões está fora do escopo do projeto, que limita-se à obtenção dos dados em si e seu fornecimento bruto ao usuário.
+Nosso grupo optou pelo projeto de uma Estação Meteorológica, capaz de medir a tempratura e umidade relativa do ambiente em está inserida. Foi definida uma utilização específica para a estação a ser montada, a partir da qual poderíamos definir claros objetivos e funções a serem realizadas, focalizando a definição dos parâmetros do projeto. A utilização definida foi para uso na agricultura, sendo possível monitorar plantações, obtendo dados de temperatura e umidade relativa do ar, que podem vir a ser utilizados para tomadas de decisões pelo agricultor. A elaboração de algoritmos responsáveis por unir os dados quantitativamente e elaborar tomadas de decisões está fora do escopo do projeto, que limita-se à obtenção dos dados em si e seu fornecimento bruto ao usuário.
 
 O fluxograma a seguir descreve o qualitativamente os componentes e funcionamento do sistema:
 
@@ -23,7 +23,7 @@ O fluxograma a seguir descreve o qualitativamente os componentes e funcionamento
 
 ### RTC DS3231
 
-Esse componente possui a função de fornecer a data e hora para armazenar os dadosobtidos no log, possuindo a função de facilitar a análise dos dados, auxiliando a detectarpadrões que possam ser maléficos para a colheita em determinados horários. A escolhapor esse componente se deve ao fato de conseguir detectar falta de energia e acionar umabateria caso seja necessário, possui ajuste automático de meses que possuem menos de 31dias e correção de ano bissexto. Além disso, possui um sensor próprio de temperatura eum cristal oscilador para garantir maior precisão.
+Esse componente possui a função de fornecer a data e hora para armazenar os dados obtidos no log, possuindo a função de facilitar a análise dos dados, auxiliando a detectar padrões que possam ser maléficos para a colheita em determinados horários. A escolha por esse componente se deve ao fato de conseguir detectar falta de energia e acionar uma bateria caso seja necessário, possui ajuste automático de meses que possuem menos de 31 dias e correção de ano bissexto. Além disso, possui um sensor próprio de temperatura e um cristal oscilador para garantir maior precisão.
 
 ### Oak-RH
 
