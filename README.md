@@ -4,11 +4,11 @@ Obs: Trabalho ainda em desenvolvimento
 
 Trabalho realizado por:
 
-Gabriel Lutffalla Estevam - nº USP 10309191
+  Gabriel Lutffalla Estevam - nº USP 10309191
 
-Vinicius Leite - nº USP 9796360
+  Vinicius Leite - nº USP 9796360
 
-Vitor Monarin Tristão - nº USP 10308993
+  Vitor Monarin Tristão - nº USP 10308993
 
 ## Introdução
 
