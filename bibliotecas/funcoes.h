@@ -1,3 +1,3 @@
-void grava_SD();
+void gravar();
 void LCDshow();
 void time();
