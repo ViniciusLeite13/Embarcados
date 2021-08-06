@@ -1,6 +1,6 @@
 # Trabalho final - Sistemas Embarcados, 2021
 
-Obs: Trabalho ainda em desenvolvimento
+Obs: Trabalho ainda em desenvolvimento - continuaremos desenvolvendo no final de semana
 
 Trabalho realizado por:
 
