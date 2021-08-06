@@ -1,4 +1,4 @@
-# Testação Meterológica - Sistemas Embarcados
+# Estação Meterológica - Sistemas Embarcados
 
 Obs: Trabalho ainda em desenvolvimento - continuaremos desenvolvendo no final de semana
 
