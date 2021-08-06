@@ -4,10 +4,8 @@ Obs: Trabalho ainda em desenvolvimento - continuaremos desenvolvendo no final de
 
 Trabalho realizado por:
 
-  Gabriel Lutffalla Estevam - nº USP 10309191
-
+  Gabriel Lutffalla Estevam- nº USP 10309191
   Vinicius Leite - nº USP 9796360
-
   Vitor Monarin Tristão - nº USP 10308993
 
 ## Introdução
