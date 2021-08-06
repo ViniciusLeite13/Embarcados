@@ -19,7 +19,7 @@ while ( x < 1){
     //Grava dados no cartao a cada 1 minuto
     if (second(t) == 0)
     {
-      grava_SD(t);
+      gravar(t);
       LCDshow();
     }
   }
