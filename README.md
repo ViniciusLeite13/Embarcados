@@ -1,4 +1,4 @@
-# Trabalho final - Sistemas Embarcados, 2021
+# Trabalho final - Sistemas Embarcados, 2021 (Em Progresso)
 
 Obs: Trabalho ainda em desenvolvimento - continuaremos desenvolvendo no final de semana
 
