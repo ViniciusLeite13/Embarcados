@@ -1,4 +1,4 @@
-# Trabalho final - Sistemas Embarcados, 2021 (Em Progresso)
+# Testação Meterológica - Sistemas Embarcados
 
 Obs: Trabalho ainda em desenvolvimento - continuaremos desenvolvendo no final de semana
 
