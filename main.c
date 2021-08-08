@@ -12,10 +12,7 @@ while ( x < 1){
   void time();
  
   t = now();
-  if (t != tLast) {
-    tLast = t;
-    printDateTime(t);
-    
+  
     //Grava dados no cartao a cada 1 minuto
     if (second(t) == 0)
     {
