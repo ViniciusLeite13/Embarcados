@@ -29,13 +29,16 @@ Foi utilizada a Toradex Colibri VF50 com Carrier Board Viola Plus V1.2. A Colibr
 O sensor escolhido foi o sensor BME280, fabricado pela Bosch Sensortech. Este é um sensor digital combinado, capaz de obter dados de temperatura, pressão atmosférica e umidade do ar, ou seja, vai ao encontro dos nossos objetivos por ser um sensor de baixo custo por permitir efetuar a leitura de 3 grandezas diferentes com um único sensor. O
 sensor é bastante compacto, sendo muito fácil de ser embarcado. O sensor em si possui dimensões de 2,5 x 2,5 x 0,93 mm³ e vem em uma placa como mostrado a seguir:
 
-===
+![BME](https://user-images.githubusercontent.com/70172639/128654577-44551808-6847-4d46-b0ae-3a2b86ee91e9.png)
+
 
 O sensor deve ser alimentado com tensões entre 1,7 e 3,6 V. Ele é capaz de operar em uma faixa de pressões de 300 a 1100 hPa, e em uma faixa de temperaturas de -40 a 85 °C, porém, para garantir que o range de medição da umidade do ar esteja entre 0 e 100%, é necessário que a temperatura esteja entre 0 e 60 °C, o que está totalmente dentro da realidade da nossa aplicação. Mesmo que, eventualmente, a temperatura ambiente saia deste intervalo ótimo, a leitura não é tão afetada, passando a ser da seguinte forma:
 
-===
+![graf](https://user-images.githubusercontent.com/70172639/128654587-7010fb86-23e3-4a78-80db-f60c95976e0b.png)
 
-O sensor utiliza comunicação I2C, então utiliza apenas 2 pinos do Arduino (SCL e SDA), além dos pinos VCC e GND. Além disso, possui biblioteca própria já desenvolvida (a qual deve ser baixada), o que facilita bastante sua implementação.
+
+O sensor utiliza comunicação I2C, então utiliza apenas 2 pinos do Arduino (SCL e SDA), além dos pinos VCC e GND. Além disso, possui biblioteca própria já desenvolvida (a qual deve ser baixada), o que facilita bastante s![BME](https://user-images.githubusercontent.com/70172639/128654568-0dd8ddfd-7967-4765-840b-341c14bd2d1d.png)
+ua implementação.
 
 
 ## Desenvolvimento
