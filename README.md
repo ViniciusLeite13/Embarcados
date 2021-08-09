@@ -65,7 +65,7 @@ Para I2C, é necessário conectar 2 pinos (SDA e SCL). Com a Colibri VF50 origin
 
 ### Referências
 
-    https://developer.toradex.com/getting-started?som=colibri-vf61&board=colibri-evaluation-board&os=linux&desktop=linux
+    https://developer.toradex.com/getting-started?som=colibri-vf50&board=iris-carrier-board&os=linux&desktop=linux
 
     https://developer.toradex.com/knowledge-base/i2c-linux
 
