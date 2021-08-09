@@ -16,7 +16,7 @@ Nosso grupo optou pelo projeto de uma Estação Meteorológica, capaz de medir a
 
 O fluxograma a seguir descreve qualitativamente os componentes e funcionamento do sistema:
 
-![WhatsApp Image 2021-08-05 at 21 14 44](https://user-images.githubusercontent.com/82786123/128452197-1c6f21d0-bb1a-4ab9-800a-294f3cd74c8a.jpeg)
+![Fluxograma](https://user-images.githubusercontent.com/70172639/128652794-9d6ec1bf-f1fa-4d71-994a-60a202df6239.png)
 
 
 ## Componentes Utilizados
