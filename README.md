@@ -69,12 +69,14 @@ Para compilar o código na placa, faz-se o cross-compiling, envia-se ao IP do ta
 
 ### Comunicação
 
-O protocolo de comunicação escolhido foi o I2C.
+O protocolo de comunicação escolhido foi o I2C. Para I2C, é necessário conectar 2 pinos (SDA e SCL). Com a Colibri VF50 original, esses pinos são o 194 (SDA) e 196 (SCL), porém, com a adição da Viola com o conector de extensão X9, esses pinos passam a ser os pinos 5 (SCL) e 6 (SDA) da Viola.
 
-Para I2C, é necessário conectar 2 pinos (SDA e SCL). Com a Colibri VF50 original, esses pinos são o 194 (SDA) e 196 (SCL), porém, com a adição da Viola com o conector de extensão X9, esses pinos passam a ser os pinos 5 (SCL) e 6 (SDA) da Viola.
+### Código
+
+O código foi feito em C, utilizando-se das bibliotecas existentes para o sensor. O código está no arquivo codigo.c e os arquivos das bibliotecas estão na pasta Bibliotecas.
 
 
-### Referências
+## Referências
 
     https://developer.toradex.com/getting-started?som=colibri-vf50&board=iris-carrier-board&os=linux&desktop=linux
 
