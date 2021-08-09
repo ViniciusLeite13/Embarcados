@@ -1,4 +1,4 @@
-#include "grava.h"
+#include "gravar.h"
 
 // Funcao para gravar o log no cartão SD
 void gravar(time_t t)
