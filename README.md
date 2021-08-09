@@ -37,7 +37,7 @@ O sensor deve ser alimentado com tensões entre 1,7 e 3,6 V. Ele é capaz de ope
 ![graf](https://user-images.githubusercontent.com/70172639/128654587-7010fb86-23e3-4a78-80db-f60c95976e0b.png)
 
 
-O sensor utiliza comunicação I2C, então utiliza apenas 2 pinos do Arduino (SCL e SDA), além dos pinos VCC e GND. Além disso, possui biblioteca própria já desenvolvida (a qual deve ser baixada), o que facilita bastante sua implementação.
+O sensor utiliza comunicação I2C, então utiliza apenas 2 pinos da placa (SCL e SDA), além dos pinos VCC e GND. Além disso, possui biblioteca própria já desenvolvida (a qual deve ser baixada), o que facilita bastante sua implementação.
 
 
 ## Desenvolvimento
@@ -60,7 +60,7 @@ Em seguida, exporta-se as variáveis para cross-compiling e executa-se o script:
     
 Para compilar o código na placa, faz-se o cross-compiling, envia-se ao IP do target e o executa:
 
-    ${CC} -Wall main.c -o codigoARM
+    ${CC} -Wall codigo.c -o codigoARM
     
     scp codigoARM root@172.17.2.121:/home/root
     
