@@ -1,15 +1,9 @@
 #include "gravar.h"
 
 // Funcao para gravar o log no cartão SD
-void gravar(time_t t)
+void gravar(time_t t, T, P, U)
 {
-    // Recebendo o valor da temperatura utilizando o i2c
-      float T = ;
-      
-    // Recebendo o valor da umidade utilizando o i2c
-      float U = ;
-      
-      
+            
   log = fopen("log.txt", "a");
   fputs("Data: ");
   fputs(day(t));
