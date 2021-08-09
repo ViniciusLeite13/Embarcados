@@ -12,14 +12,18 @@ Trabalho realizado por:
 
 ## Introdução
 
-Nosso grupo optou pelo projeto de uma Estação Meteorológica, capaz de medir a tempratura e umidade relativa do ambiente em está inserida. Foi definida uma utilização específica para a estação a ser montada, a partir da qual poderíamos definir claros objetivos e funções a serem realizadas, focalizando a definição dos parâmetros do projeto. A utilização definida foi para uso na agricultura, sendo possível monitorar plantações, obtendo dados de temperatura e umidade relativa do ar, que podem vir a ser utilizados para tomadas de decisões pelo agricultor. A elaboração de algoritmos responsáveis por unir os dados quantitativamente e elaborar tomadas de decisões está fora do escopo do projeto, que limita-se à obtenção dos dados em si e seu fornecimento bruto ao usuário.
+Nosso grupo optou pelo projeto de uma Estação Meteorológica, capaz de medir a tempratura e umidade relativa do ar do ambiente em que está inserida. Foi definida uma utilização específica para a estação a ser montada, a partir da qual poderíamos definir claros objetivos e funções a serem realizadas, focalizando a definição dos parâmetros do projeto. A utilização definida foi para uso na agricultura, sendo possível monitorar plantações, obtendo dados de temperatura e umidade relativa do ar, que podem vir a ser utilizados para tomadas de decisões pelo agricultor. A elaboração de algoritmos responsáveis por unir os dados quantitativamente e elaborar tomadas de decisões está fora do escopo do projeto, que limita-se à obtenção dos dados em si e seu fornecimento bruto ao usuário.
 
-O fluxograma a seguir descreve o qualitativamente os componentes e funcionamento do sistema:
+O fluxograma a seguir descreve qualitativamente os componentes e funcionamento do sistema:
 
 ![WhatsApp Image 2021-08-05 at 21 14 44](https://user-images.githubusercontent.com/82786123/128452197-1c6f21d0-bb1a-4ab9-800a-294f3cd74c8a.jpeg)
 
 
 ## Componentes Utilizados
+
+### Módulo e Carrier Board
+
+Foi utilizada a Toradex Colibri VF50 com Carrier Board Viola Plus V1.2. A Colibri VF50 é um módulo SODIMM System on Chip, que possui processador ARM Cortex-A5, permite rodar um sistema operacional Linux, e oferece possibilidades de interface GPIO, I2C, SPI, RMII, UART, CAN, USB, ethernet, etc.
 
 ### RTC DS3231
 
@@ -42,7 +46,7 @@ Foi escolhido um display LCD cristal padrão com duas linhas e dezesseis colunas
 
 A placa Toradex Colibri VF50 será usada de forma embarcada. Para a configuração inicial da placa, é necessário se comunicar com ela a partir do computador host do laboratório. 
 
-Inicialmente, é necessário baixar o SDK da Toradex do site para o diretório home do computador e instalá-la com os comandos:
+Inicialmente, é necessário baixar o SDK da Toradex do site para o diretório home do computador e instalá-la com os comandos no terminal do Linux:
 
     chmod +x angstrom-glibc-x86_64-armv7at2hf-neon-v2017.12-toolchain.sh
     
@@ -65,6 +69,8 @@ Para compilar o código na placa, faz-se o cross-compiling, envia-se ao IP do ta
 
 ### Comunicação
 
-O protocolo de comunicação escolhido foi o I2C
+O protocolo de comunicação escolhido foi o I2C.
+
+Para I2C, é necessário conectar 2 pinos (SDA e SCL). Com a Colibri VF50 original, esses pinos são o 194 (SDA) e 196 (SCL), porém, com a adição da Viola com o conector de extensão X9, esses pinos passam a ser os pinos 5 (SCL) e 6 (SDA) da Viola.
 
 
