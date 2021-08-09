@@ -25,19 +25,10 @@ O fluxograma a seguir descreve qualitativamente os componentes e funcionamento d
 
 Foi utilizada a Toradex Colibri VF50 com Carrier Board Viola Plus V1.2. A Colibri VF50 é um módulo SODIMM System on Chip, que possui processador ARM Cortex-A5, permite rodar um sistema operacional Linux, e oferece possibilidades de interface GPIO, I2C, SPI, RMII, UART, CAN, USB, ethernet, etc.
 
-### RTC DS3231
 
-Esse componente possui a função de fornecer a data e hora para armazenar os dados obtidos no log, possuindo a função de facilitar a análise dos dados, auxiliando a detectar padrões que possam ser maléficos para a colheita em determinados horários. A escolha por esse componente se deve ao fato de conseguir detectar falta de energia e acionar uma bateria caso seja necessário, além de possuir ajuste automático de meses que possuem menos de 31 dias e correção de ano bissexto. Conta também com um sensor próprio de temperatura e um cristal oscilador, que garante maior precisão.
+### BME280
 
-### Oak-RH
-
-O sensor escolhido foi o Oak-RH, um único sensor capaz de obter dados de umidade relativa do ar e temperatura ambiente, com amplo suporte para a Toradex. O sensor é capaz de medir umidade relativa do ar entre 0 e 100%, com resolução de 0,05%. Além disso, é capaz de medir temperaturas ambiente de -10°C a 85°C, com uma resolução de 0,01°C e precisão de 2°C. Portanto, é um sensor que atende bastante nossas necessidades.
-
-Os sensores Oak são sensores USB. As informações são transferidas em “pacotes” de estrutura fixa, chamados Reports. Existem os interrupt reports e os feature reports. Os sensores Oak usam os interrupt reports para transferir dados dos sensores e feature reports para transferir parâmetros de configuração do sensor. O sensor possui biblioteca própria, o que facilita a programação.
-
-### Display
-
-Foi escolhido um display LCD cristal padrão com duas linhas e dezesseis colunas, luzde fundo azul e dígitos brancos. Ele se liga ao controlador por quatro pinos de dados edois pinos de controle. O código foi implementado visando que uma variável seja exibidade cada vez, por um período de 10 segundos cada.
+O sensor escolhido foi o sensor BME280, fabricado pela Bosch Sensortech. Este é um sensor digital combinado, capaz de obter dados de temperatura, pressão atmosférica e umidade do ar, ou seja, vai ao encontro dos nossos objetivos por ser um sensor de baixo custo por permitir efetuar a leitura de 3 grandezas diferentes com um único sensor. O sensor é bastante compacto, sendo muito fácil de ser embarcado. O sensor em si possui dimensões de 2,5 x 2,5 x 0,93 mm³ e vem em uma placa como mostrado a seguir:
 
 
 ## Desenvolvimento
@@ -74,3 +65,12 @@ O protocolo de comunicação escolhido foi o I2C.
 Para I2C, é necessário conectar 2 pinos (SDA e SCL). Com a Colibri VF50 original, esses pinos são o 194 (SDA) e 196 (SCL), porém, com a adição da Viola com o conector de extensão X9, esses pinos passam a ser os pinos 5 (SCL) e 6 (SDA) da Viola.
 
 
+### Referências
+
+https://developer.toradex.com/getting-started?som=colibri-vf61&board=colibri-evaluation-board&os=linux&desktop=linux
+
+https://developer.toradex.com/knowledge-base/i2c-linux
+
+https://developer.toradex.com/products/colibri-vf50#tab-carrier-boards
+
+https://github.com/BoschSensortec/BME280_driver
