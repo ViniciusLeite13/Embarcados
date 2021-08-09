@@ -37,8 +37,7 @@ O sensor deve ser alimentado com tensões entre 1,7 e 3,6 V. Ele é capaz de ope
 ![graf](https://user-images.githubusercontent.com/70172639/128654587-7010fb86-23e3-4a78-80db-f60c95976e0b.png)
 
 
-O sensor utiliza comunicação I2C, então utiliza apenas 2 pinos do Arduino (SCL e SDA), além dos pinos VCC e GND. Além disso, possui biblioteca própria já desenvolvida (a qual deve ser baixada), o que facilita bastante s![BME](https://user-images.githubusercontent.com/70172639/128654568-0dd8ddfd-7967-4765-840b-341c14bd2d1d.png)
-ua implementação.
+O sensor utiliza comunicação I2C, então utiliza apenas 2 pinos do Arduino (SCL e SDA), além dos pinos VCC e GND. Além disso, possui biblioteca própria já desenvolvida (a qual deve ser baixada), o que facilita bastante sua implementação.
 
 
 ## Desenvolvimento
