@@ -1,1 +1,1 @@
-void gravar(time_t t, T, P, U);
+void gravar(time_t t,float T,float P,float U);
